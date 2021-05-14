@@ -4,15 +4,22 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
     display:flex;
-    align-items:center;
+    align-self:auto;
+    justify-content:space-evenly;
 `
 
 const StyledName = styled.h2`
     color:blue;
+    display:flex;
+    align-items:center;
+    background-color:tan;
+    border-radius:15px;
 `
 
 const StyledInfo = styled.h4`
     color:skyblue;
+    background-color:tan;
+    border-radius: 15px;
 `
 
 export default function Character({ data }) {
@@ -23,7 +30,6 @@ export default function Character({ data }) {
             <StyledName>
                 Name: {data.name}
             </StyledName>
-            <br></br>
             <StyledInfo>
                 <span className="char-details">
                     Birth year: {birth_year}
