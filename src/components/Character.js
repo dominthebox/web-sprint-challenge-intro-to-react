@@ -3,7 +3,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-    /* display:flex; */
+    display:flex;
+    align-items:center;
 `
 
 const StyledName = styled.h2`
