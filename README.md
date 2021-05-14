@@ -81,6 +81,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React JS is a JavaScript library, more specifically a user interface component library, that is un-opinionated, meaning that it is not a complete framework.  It attempts to solve the problem of managing a lot of data or state, without causing too much stress on the DOM (document object model), basically rendering data and appending it to the webpage via the virtual DOM first before injecting it into the actual DOM. It is scalable and reuseable. 
+
 1. Describe component state.
+
+React JS has the ability to create components, component state is essentially data on the component. The characteristics of state is that it can be changed, meaning that the data on the component while on the webpage can be changed of modified by the user depending on the components functionality. After the data is changed or manipulated in someway, what happens is the component re-renders on the page.  
+
 1. Describe props.
+
+React components take data through Props, short for properties, which are an object that is passed to the component as an argument. It's the main way to inject data that is not usually visible to the component, meaning it is coming from somewhere other than the file where the component body is built and lives. 
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affects something else, outside of the scope of the function being executed. So they are not exclusive to React, but because whenever data, either slices of state or data passed through props, is changed or manipulated, the function component re-renders. Therefore we have to be careful to manage our side effects so that we can avoid bugs and inconsistencies in our React App. The effect hook { useEffect } is one of the ways React deals with this. Because { useEffect } is used inside the component, it has teh components function scope so it can access props, state, and local variables. 
