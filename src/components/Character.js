@@ -2,6 +2,10 @@
 import React from "react";
 import styled from "styled-components";
 
+const StyledDiv = styled.div`
+    /* display:flex; */
+`
+
 const StyledName = styled.h2`
     color:blue;
 `
@@ -14,10 +18,11 @@ export default function Character({ data }) {
     const {name, height, mass, eye_color, gender, birth_year} = data;
     
     return (
-        <div className="char-info">
+        <StyledDiv className="char-info">
             <StyledName>
                 Name: {data.name}
             </StyledName>
+            <br></br>
             <StyledInfo>
                 <span className="char-details">
                     Birth year: {birth_year}
@@ -32,6 +37,6 @@ export default function Character({ data }) {
                     <br></br>
                 </span>
             </StyledInfo>
-        </div>
+        </StyledDiv>
     )
 }

@@ -39,7 +39,7 @@ const App = () => {
     <div className="App">
       <StyledHead className="Header">Characters</StyledHead>
       {data.map(dat => {
-      return <Character key={data.index} data={data} />})}
+      return <Character key={dat.index} data={dat} />})}
     </div>
   );
 }
