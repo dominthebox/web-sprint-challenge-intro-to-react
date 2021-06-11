@@ -13,13 +13,13 @@ const StyledName = styled.h2`
     display: flex;
     align-items: center;
     background-color: tan;
-    border-radius: 15px;
+    border-radius: 5px;
 `
 
 const StyledInfo = styled.h4`
     color: dodgerblue;
     background-color: tan;
-    border-radius: 15px;
+    border-radius: 8px;
 `
 
 export default function Character({ characters }) {
@@ -28,7 +28,7 @@ export default function Character({ characters }) {
     return (
         <StyledDiv className="char-info">
             <StyledName>
-                Name: {characters.name}
+                Name: {name}
             </StyledName>
             <StyledInfo>
                 <span className="char-details">
